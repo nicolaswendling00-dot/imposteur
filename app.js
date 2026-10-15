@@ -262,6 +262,7 @@ function confettis() {
 
 // ---------- Rendu ----------
 function afficher() {
+  const y = window.scrollY;
   sauver();
   fermerModale();
   const P = S.partie;
@@ -276,7 +277,8 @@ function afficher() {
   }
   // On ne remonte en haut que si l'écran change (pas quand on touche un réglage de l'accueil).
   const cle = P ? `${P.ecran}-${P.distrib}-${P.manche}-${P.vote ? P.vote.i + '-' + P.vote.pret : ''}` : 'accueil';
-  if (cle !== dernierEcran) window.scrollTo(0, 0);
+  // Sur le même écran, on remet explicitement la position (Safari iOS la perd quand le contenu est remplacé).
+  window.scrollTo(0, cle !== dernierEcran ? 0 : y);
   dernierEcran = cle;
 }
 let dernierEcran = null;

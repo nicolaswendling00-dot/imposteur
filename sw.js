@@ -1,5 +1,6 @@
 // Service worker : réseau d'abord, cache en secours (toujours la dernière version, jouable hors ligne).
-const CACHE_NAME = 'imposteur-v2';
+// cache: 'no-cache' évite le cache HTTP de GitHub Pages (10 min) qui servait encore l'ancienne version.
+const CACHE_NAME = 'imposteur-v3';
 const COQUILLE = [
   './', 'index.html', 'style.css', 'app.js', 'manifest.webmanifest', 'data/paires.json',
   'icons/icon.svg', 'icons/icon-192.png', 'icons/icon-512.png', 'icons/apple-touch-icon.png'
@@ -21,7 +22,7 @@ self.addEventListener('fetch', e => {
   const req = e.request;
   if (req.method !== 'GET') return;
   e.respondWith(
-    fetch(req)
+    fetch(req, { cache: 'no-cache' })
       .then(rep => {
         if (rep.ok && (new URL(req.url).origin === location.origin || req.url.includes('fonts.g'))) {
           const copie = rep.clone();
