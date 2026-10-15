@@ -20,7 +20,7 @@ let S = charger();
 function etatParDefaut() {
   return {
     joueurs: [],
-    reglages: { imposteurs: 1, white: 0, whiteCommence: false, vote: 'secret', themes: null },
+    reglages: { imposteurs: 1, white: 0, whiteCommence: false, vote: 'main', themes: null, v: 2 },
     scores: {},
     utilisees: [],
     partie: null
@@ -32,7 +32,10 @@ function charger() {
     const brut = JSON.parse(localStorage.getItem(CLE_STOCKAGE));
     if (brut && Array.isArray(brut.joueurs)) {
       const d = etatParDefaut();
-      return { ...d, ...brut, reglages: { ...d.reglages, ...brut.reglages } };
+      const e = { ...d, ...brut, reglages: { ...d.reglages, ...brut.reglages } };
+      // v2 : le vote à main levée devient le mode par défaut.
+      if (!brut.reglages || !brut.reglages.v) { e.reglages.vote = 'main'; e.reglages.v = 2; }
+      return e;
     }
   } catch (e) { /* stockage indisponible : on repart de zéro */ }
   return etatParDefaut();
@@ -81,6 +84,18 @@ function identite(i) { return { emoji: EMOJIS[i % EMOJIS.length], couleur: COULE
 
 // ---------- Réglages : bornes ----------
 function maxInfiltres(n) { return Math.max(1, Math.ceil(n / 2) - 1); }   // il faut plus de civils que d'infiltrés
+// Répartition conseillée (celle des règles d'Undercover) : environ un intrus pour trois joueurs,
+// Mr. White à partir de 5 joueurs, un second à partir de 15.
+function repartitionConseillee(n) {
+  n = Math.max(n, MIN_JOUEURS);
+  const imposteurs = n <= 6 ? 1 : n <= 8 ? 2 : n <= 11 ? 3 : n <= 14 ? 4 : 5;
+  const white = n < 5 ? 0 : n < 15 ? 1 : 2;
+  return { imposteurs, white };
+}
+function appliquerRepartition() {
+  Object.assign(S.reglages, repartitionConseillee(S.joueurs.length));
+}
+
 function corrigerReglages() {
   const r = S.reglages;
   const n = S.joueurs.length;
@@ -259,8 +274,12 @@ function afficher() {
     };
     $app.innerHTML = (vues[P.ecran] || vueDebat)();
   }
-  window.scrollTo(0, 0);
+  // On ne remonte en haut que si l'écran change (pas quand on touche un réglage de l'accueil).
+  const cle = P ? `${P.ecran}-${P.distrib}-${P.manche}-${P.vote ? P.vote.i + '-' + P.vote.pret : ''}` : 'accueil';
+  if (cle !== dernierEcran) window.scrollTo(0, 0);
+  dernierEcran = cle;
 }
+let dernierEcran = null;
 
 function barreJeu(etiquette, avecMot = true) {
   return `<div class="barre">
@@ -276,6 +295,7 @@ function vueAccueil() {
   const n = S.joueurs.length;
   const max = maxInfiltres(Math.max(n, MIN_JOUEURS));
   const civils = Math.max(0, n - r.imposteurs - r.white);
+  const conseil = repartitionConseillee(n);
   const actifs = themesActifs();
   const toutCoche = actifs.length === BASE.themes.length;
   const nbPaires = BASE.themes.filter(t => actifs.includes(t.id)).reduce((s, t) => s + t.paires.length, 0);
@@ -338,7 +358,10 @@ function vueAccueil() {
       <span class="badge civil">🙂 ${civils} civil${civils > 1 ? 's' : ''}</span>
       ${r.imposteurs ? `<span class="badge imposteur">🕵️ ${r.imposteurs} imposteur${r.imposteurs > 1 ? 's' : ''}</span>` : ''}
       ${r.white ? `<span class="badge white">🎩 ${r.white} Mr. White</span>` : ''}
-    </div>` : ''}
+    </div>
+    ${conseil.imposteurs !== r.imposteurs || conseil.white !== r.white
+      ? `<button class="lien" style="display:block;margin:4px auto 0" data-action="conseil">↺ Répartition conseillée (${conseil.imposteurs} imposteur${conseil.imposteurs > 1 ? 's' : ''}${conseil.white ? ` + ${conseil.white} Mr. White` : ''})</button>`
+      : `<p class="petit" style="text-align:center;margin:6px 0 0">✨ Répartition conseillée pour ${n} joueurs</p>`}` : ''}
   </section>
 
   <section class="carte">
@@ -666,7 +689,8 @@ function modaleQuitter() {
 
 // ---------- Actions ----------
 const actions = {
-  retirer(d) { S.joueurs.splice(+d.i, 1); afficher(); },
+  retirer(d) { S.joueurs.splice(+d.i, 1); appliquerRepartition(); afficher(); },
+  conseil() { appliquerRepartition(); afficher(); },
   plus(d) { S.reglages[d.k]++; corrigerReglages(); afficher(); },
   moins(d) { S.reglages[d.k]--; corrigerReglages(); afficher(); },
   'bascule-white'() { S.reglages.whiteCommence = !S.reglages.whiteCommence; afficher(); },
@@ -759,6 +783,7 @@ document.addEventListener('submit', e => {
     if (S.joueurs.some(n => n.toLowerCase() === nom.toLowerCase())) return toast('Ce prénom est déjà pris !');
     if (S.joueurs.length >= MAX_JOUEURS) return;
     S.joueurs.push(nom);
+    appliquerRepartition();
     afficher();
     document.getElementById('nouveau')?.focus();
   } else if (f === 'devine') {

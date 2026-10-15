@@ -69,8 +69,12 @@ button { cursor: pointer; }
   font-weight: 700;
   letter-spacing: 0.01em;
   color: var(--violet);
-  text-shadow: 3px 3px 0 var(--encre);
-  -webkit-text-stroke: 1.5px var(--encre);
+  /* Contour par ombres : -webkit-text-stroke dessinait les chevauchements internes des lettres (P, t). */
+  text-shadow:
+    -1.5px -1.5px 0 var(--encre), 1.5px -1.5px 0 var(--encre),
+    -1.5px 1.5px 0 var(--encre), 1.5px 1.5px 0 var(--encre),
+    0 -2px 0 var(--encre), 0 2px 0 var(--encre), -2px 0 0 var(--encre), 2px 0 0 var(--encre),
+    4px 4px 0 var(--encre);
 }
 .logo p { margin: 2px 0 0; color: var(--encre-2); font-weight: 500; }
 @keyframes balance { 0%, 100% { transform: rotate(-8deg); } 50% { transform: rotate(8deg); } }

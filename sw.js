@@ -1,5 +1,5 @@
 // Service worker : réseau d'abord, cache en secours (toujours la dernière version, jouable hors ligne).
-const CACHE_NAME = 'imposteur-v1';
+const CACHE_NAME = 'imposteur-v2';
 const COQUILLE = [
   './', 'index.html', 'style.css', 'app.js', 'manifest.webmanifest', 'data/paires.json',
   'icons/icon.svg', 'icons/icon-192.png', 'icons/icon-512.png', 'icons/apple-touch-icon.png'
