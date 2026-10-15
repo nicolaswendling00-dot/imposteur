@@ -1,0 +1,278 @@
+{
+  "version": 1,
+  "themes": [
+    {
+      "id": "animaux", "nom": "Animaux", "emoji": "🐾",
+      "paires": [
+        ["Chat", "Chien"], ["Lion", "Tigre"], ["Loup", "Renard"], ["Cheval", "Âne"], ["Vache", "Chèvre"],
+        ["Mouton", "Lama"], ["Lapin", "Lièvre"], ["Souris", "Hamster"], ["Aigle", "Faucon"], ["Pingouin", "Manchot"],
+        ["Dauphin", "Baleine"], ["Requin", "Orque"], ["Crocodile", "Lézard"], ["Grenouille", "Crapaud"], ["Abeille", "Guêpe"],
+        ["Papillon", "Libellule"], ["Fourmi", "Termite"], ["Escargot", "Limace"], ["Hibou", "Chouette"], ["Pigeon", "Corbeau"],
+        ["Poule", "Canard"], ["Ours", "Panda"], ["Girafe", "Zèbre"], ["Éléphant", "Rhinocéros"], ["Singe", "Gorille"],
+        ["Kangourou", "Koala"], ["Serpent", "Ver de terre"], ["Phoque", "Morse"], ["Araignée", "Scorpion"], ["Moustique", "Mouche"],
+        ["Écureuil", "Castor"], ["Perroquet", "Toucan"], ["Chameau", "Dromadaire"], ["Poisson rouge", "Tortue"], ["Cochon", "Sanglier"],
+        ["Méduse", "Pieuvre"], ["Flamant rose", "Cigogne"], ["Coccinelle", "Luciole"], ["Guépard", "Léopard"], ["Hippopotame", "Rhinocéros"],
+        ["Cygne", "Oie"], ["Chauve-souris", "Hibou"], ["Hérisson", "Porc-épic"], ["Crabe", "Homard"], ["Paon", "Dinde"]
+      ]
+    },
+    {
+      "id": "nourriture", "nom": "À table", "emoji": "🍕",
+      "paires": [
+        ["Pizza", "Burger"], ["Pâtes", "Riz"], ["Crêpe", "Gaufre"], ["Croissant", "Pain au chocolat"], ["Sushi", "Ramen"],
+        ["Frites", "Chips"], ["Raclette", "Fondue"], ["Lasagnes", "Gratin"], ["Hot-dog", "Sandwich"], ["Tacos", "Kebab"],
+        ["Omelette", "Œuf au plat"], ["Soupe", "Purée"], ["Quiche", "Pizza"], ["Steak", "Côtelette"], ["Poulet rôti", "Dinde de Noël"],
+        ["Saucisson", "Jambon"], ["Camembert", "Brie"], ["Beurre", "Margarine"], ["Yaourt", "Fromage blanc"], ["Ketchup", "Mayonnaise"],
+        ["Moutarde", "Wasabi"], ["Sel", "Poivre"], ["Sucre", "Miel"], ["Confiture", "Pâte à tartiner"], ["Chocolat", "Caramel"],
+        ["Glace", "Sorbet"], ["Gâteau", "Muffin"], ["Cookie", "Brownie"], ["Bonbon", "Chewing-gum"], ["Pop-corn", "Barbe à papa"],
+        ["Croque-monsieur", "Panini"], ["Couscous", "Paella"], ["Bœuf bourguignon", "Pot-au-feu"], ["Macaron", "Meringue"], ["Éclair", "Religieuse"],
+        ["Céréales", "Tartine"], ["Baguette", "Brioche"], ["Cornichon", "Olive"], ["Spaghetti", "Tagliatelles"], ["Nuggets", "Bâtonnets de poisson"],
+        ["Mousse au chocolat", "Crème brûlée"], ["Tarte aux pommes", "Clafoutis"], ["Pancake", "Pain perdu"], ["Sucette", "Sucre d'orge"], ["Galette des rois", "Bûche de Noël"]
+      ]
+    },
+    {
+      "id": "boissons", "nom": "Boissons", "emoji": "🥤",
+      "paires": [
+        ["Café", "Thé"], ["Jus d'orange", "Jus de pomme"], ["Soda", "Limonade"], ["Eau plate", "Eau gazeuse"], ["Lait", "Chocolat chaud"],
+        ["Smoothie", "Milkshake"], ["Sirop", "Jus de fruits"], ["Tisane", "Thé glacé"], ["Expresso", "Cappuccino"], ["Diabolo menthe", "Grenadine"],
+        ["Lait fraise", "Yop"], ["Soupe", "Bouillon"], ["Eau de coco", "Jus d'ananas"], ["Citronnade", "Orangeade"], ["Biberon", "Gourde"]
+      ]
+    },
+    {
+      "id": "fruits", "nom": "Fruits et légumes", "emoji": "🍓",
+      "paires": [
+        ["Pomme", "Poire"], ["Orange", "Mandarine"], ["Citron", "Pamplemousse"], ["Fraise", "Framboise"], ["Cerise", "Prune"],
+        ["Banane", "Mangue"], ["Pêche", "Abricot"], ["Melon", "Pastèque"], ["Raisin", "Myrtille"], ["Kiwi", "Fruit de la passion"],
+        ["Noix de coco", "Ananas"], ["Carotte", "Navet"], ["Pomme de terre", "Patate douce"], ["Tomate", "Poivron"], ["Concombre", "Courgette"],
+        ["Salade", "Épinards"], ["Brocoli", "Chou-fleur"], ["Oignon", "Ail"], ["Petits pois", "Haricots verts"], ["Champignon", "Truffe"],
+        ["Citrouille", "Butternut"], ["Radis", "Betterave"], ["Maïs", "Blé"], ["Noisette", "Amande"], ["Cacahuète", "Pistache"],
+        ["Châtaigne", "Marron"], ["Figue", "Datte"], ["Asperge", "Poireau"], ["Céleri", "Fenouil"], ["Grenade", "Litchi"],
+        ["Aubergine", "Avocat"], ["Mûre", "Cassis"], ["Clémentine", "Kumquat"], ["Noix", "Noisette"], ["Chou", "Chou de Bruxelles"]
+      ]
+    },
+    {
+      "id": "maison", "nom": "Maison", "emoji": "🏠",
+      "paires": [
+        ["Lit", "Canapé"], ["Chaise", "Tabouret"], ["Table", "Bureau"], ["Lampe", "Bougie"], ["Miroir", "Fenêtre"],
+        ["Porte", "Portail"], ["Clé", "Cadenas"], ["Oreiller", "Coussin"], ["Couette", "Couverture"], ["Rideau", "Volet"],
+        ["Tapis", "Paillasson"], ["Douche", "Baignoire"], ["Brosse à dents", "Dentifrice"], ["Savon", "Shampoing"], ["Serviette", "Peignoir"],
+        ["Peigne", "Brosse à cheveux"], ["Armoire", "Commode"], ["Étagère", "Bibliothèque"], ["Horloge", "Réveil"], ["Aspirateur", "Balai"],
+        ["Lave-linge", "Lave-vaisselle"], ["Radiateur", "Cheminée"], ["Escalier", "Ascenseur"], ["Grenier", "Cave"], ["Garage", "Abri de jardin"],
+        ["Balcon", "Terrasse"], ["Parapluie", "Parasol"], ["Poubelle", "Panier à linge"], ["Sonnette", "Interphone"], ["Toilettes", "Lavabo"],
+        ["Ampoule", "Lampe torche"], ["Vase", "Pot de fleurs"], ["Sèche-cheveux", "Fer à repasser"], ["Boîte aux lettres", "Niche"], ["Hamac", "Transat"],
+        ["Ventilateur", "Climatiseur"], ["Lit superposé", "Mezzanine"], ["Piscine gonflable", "Jacuzzi"], ["Chandelier", "Lustre"], ["Cintre", "Porte-manteau"]
+      ]
+    },
+    {
+      "id": "cuisine", "nom": "Cuisine", "emoji": "🍳",
+      "paires": [
+        ["Fourchette", "Cuillère"], ["Couteau", "Ciseaux"], ["Casserole", "Poêle"], ["Assiette", "Bol"], ["Verre", "Tasse"],
+        ["Four", "Micro-ondes"], ["Frigo", "Congélateur"], ["Grille-pain", "Gaufrier"], ["Mixeur", "Fouet"], ["Bouilloire", "Cafetière"],
+        ["Passoire", "Entonnoir"], ["Louche", "Spatule"], ["Tire-bouchon", "Décapsuleur"], ["Plateau", "Planche à découper"], ["Nappe", "Set de table"],
+        ["Paille", "Gobelet"], ["Barbecue", "Plancha"], ["Cocotte-minute", "Wok"], ["Tablier", "Toque"], ["Baguettes chinoises", "Cure-dents"],
+        ["Moule à gâteau", "Rouleau à pâtisserie"], ["Saladier", "Plat à gratin"], ["Thermos", "Bouteille"], ["Râpe", "Éplucheur"], ["Balance", "Verre doseur"]
+      ]
+    },
+    {
+      "id": "metiers", "nom": "Métiers", "emoji": "👩‍🚒",
+      "paires": [
+        ["Médecin", "Infirmier"], ["Policier", "Gendarme"], ["Pompier", "Secouriste"], ["Boulanger", "Pâtissier"], ["Cuisinier", "Serveur"],
+        ["Professeur", "Surveillant"], ["Pilote", "Hôtesse de l'air"], ["Astronaute", "Astronome"], ["Avocat", "Juge"], ["Plombier", "Électricien"],
+        ["Maçon", "Charpentier"], ["Coiffeur", "Barbier"], ["Facteur", "Livreur"], ["Agriculteur", "Jardinier"], ["Vétérinaire", "Soigneur de zoo"],
+        ["Dentiste", "Pharmacien"], ["Boucher", "Poissonnier"], ["Acteur", "Humoriste"], ["Journaliste", "Écrivain"], ["Photographe", "Peintre"],
+        ["Architecte", "Ingénieur"], ["Caissier", "Vendeur"], ["Chauffeur de taxi", "Chauffeur de bus"], ["Soldat", "Garde du corps"], ["Clown", "Magicien"],
+        ["Détective", "Espion"], ["Banquier", "Comptable"], ["Bibliothécaire", "Libraire"], ["Arbitre", "Entraîneur"], ["Sage-femme", "Pédiatre"],
+        ["Youtubeur", "Streamer"], ["Président", "Maire"], ["Fleuriste", "Paysagiste"], ["Mécanicien", "Garagiste"], ["Scientifique", "Inventeur"],
+        ["Archéologue", "Paléontologue"], ["Capitaine", "Matelot"], ["Maître-nageur", "Moniteur de ski"], ["Chirurgien", "Dentiste"], ["Couturier", "Cordonnier"]
+      ]
+    },
+    {
+      "id": "sports", "nom": "Sports", "emoji": "⚽",
+      "paires": [
+        ["Football", "Rugby"], ["Tennis", "Badminton"], ["Basket", "Handball"], ["Natation", "Plongée"], ["Ski", "Snowboard"],
+        ["Judo", "Karaté"], ["Boxe", "Lutte"], ["Golf", "Mini-golf"], ["Ping-pong", "Squash"], ["Volley", "Water-polo"],
+        ["Patin à glace", "Roller"], ["Surf", "Skateboard"], ["Escalade", "Randonnée"], ["Équitation", "Rodéo"], ["Bowling", "Pétanque"],
+        ["Escrime", "Tir à l'arc"], ["Gymnastique", "Danse"], ["Yoga", "Pilates"], ["Formule 1", "Rallye"], ["Marathon", "Triathlon"],
+        ["Hockey sur glace", "Curling"], ["Baseball", "Cricket"], ["Musculation", "Crossfit"], ["Pêche", "Chasse"], ["Canoë", "Aviron"],
+        ["Parachute", "Parapente"], ["Fléchettes", "Billard"], ["Saut en longueur", "Saut en hauteur"], ["Sumo", "Catch"], ["Jeux olympiques", "Coupe du monde"],
+        ["Planche à voile", "Kitesurf"], ["Course à pied", "Marche nordique"], ["Trampoline", "Gymnastique"], ["Ballon", "Raquette"], ["Médaille d'or", "Trophée"],
+        ["But", "Panier"], ["Gardien", "Défenseur"], ["Sifflet", "Carton rouge"], ["Tour de France", "Paris-Roubaix"], ["Bobsleigh", "Luge"]
+      ]
+    },
+    {
+      "id": "transports", "nom": "Transports", "emoji": "🚗",
+      "paires": [
+        ["Voiture", "Camion"], ["Bus", "Tramway"], ["Train", "Métro"], ["Avion", "Hélicoptère"], ["Bateau", "Sous-marin"],
+        ["Vélo", "Trottinette"], ["Moto", "Scooter"], ["Fusée", "Soucoupe volante"], ["Montgolfière", "Dirigeable"], ["Taxi", "Limousine"],
+        ["Ambulance", "Camion de pompiers"], ["Tracteur", "Moissonneuse"], ["Paquebot", "Voilier"], ["Kayak", "Pédalo"], ["Téléphérique", "Télésiège"],
+        ["Char d'assaut", "Bulldozer"], ["Calèche", "Carrosse"], ["Jet-ski", "Hors-bord"], ["Camping-car", "Caravane"], ["Planeur", "Deltaplane"],
+        ["Draisienne", "Tricycle"], ["Tandem", "Vélo électrique"], ["Traîneau", "Luge"], ["Grue", "Pelleteuse"], ["Radeau", "Barque"],
+        ["Poussette", "Landau"], ["Ferry", "Péniche"], ["Train fantôme", "Wagonnet"], ["Autoroute", "Route nationale"], ["Feu rouge", "Panneau stop"]
+      ]
+    },
+    {
+      "id": "lieux", "nom": "Lieux", "emoji": "🏰",
+      "paires": [
+        ["Plage", "Piscine"], ["Montagne", "Volcan"], ["Forêt", "Jungle"], ["Désert", "Savane"], ["Hôpital", "Pharmacie"],
+        ["École", "Université"], ["Cinéma", "Théâtre"], ["Musée", "Château"], ["Restaurant", "Cantine"], ["Supermarché", "Marché"],
+        ["Boulangerie", "Épicerie"], ["Gare", "Aéroport"], ["Prison", "Commissariat"], ["Palais", "Manoir"], ["Zoo", "Aquarium"],
+        ["Parc d'attractions", "Fête foraine"], ["Cirque", "Spectacle de marionnettes"], ["Stade", "Gymnase"], ["Mairie", "Bureau de poste"], ["Hôtel", "Camping"],
+        ["Île", "Oasis"], ["Lac", "Rivière"], ["Grotte", "Tunnel"], ["Ferme", "Ranch"], ["Phare", "Moulin"],
+        ["Discothèque", "Salle de concert"], ["Village", "Ville"], ["Cabane", "Tente"], ["Igloo", "Chalet"], ["Gratte-ciel", "Tour de contrôle"],
+        ["Port", "Marina"], ["Bibliothèque", "Librairie"], ["Parc", "Jardin"], ["Laverie", "Pressing"], ["Station-service", "Parking"],
+        ["Patinoire", "Piste de ski"], ["Salle de classe", "Amphithéâtre"], ["Pont", "Barrage"], ["Labyrinthe", "Escape game"], ["Vestiaire", "Cabine d'essayage"]
+      ]
+    },
+    {
+      "id": "nature", "nom": "Nature et météo", "emoji": "🌈",
+      "paires": [
+        ["Soleil", "Lune"], ["Étoile", "Planète"], ["Pluie", "Neige"], ["Orage", "Tempête"], ["Arc-en-ciel", "Aurore boréale"],
+        ["Nuage", "Brouillard"], ["Vent", "Tornade"], ["Mer", "Océan"], ["Arbre", "Buisson"], ["Rose", "Tulipe"],
+        ["Tournesol", "Marguerite"], ["Cactus", "Palmier"], ["Sapin", "Chêne"], ["Feuille", "Pétale"], ["Herbe", "Mousse"],
+        ["Sable", "Terre"], ["Caillou", "Rocher"], ["Glaçon", "Flocon"], ["Volcan", "Geyser"], ["Cascade", "Fontaine"],
+        ["Éclair", "Tonnerre"], ["Lever de soleil", "Coucher de soleil"], ["Printemps", "Automne"], ["Été", "Hiver"], ["Marée", "Vague"],
+        ["Comète", "Météorite"], ["Grêle", "Verglas"], ["Canicule", "Sécheresse"], ["Tremblement de terre", "Tsunami"], ["Coquillage", "Étoile de mer"],
+        ["Champignon", "Mousse"], ["Gland", "Pomme de pin"], ["Trèfle", "Pissenlit"], ["Bambou", "Roseau"], ["Lave", "Magma"]
+      ]
+    },
+    {
+      "id": "vetements", "nom": "Vêtements", "emoji": "👕",
+      "paires": [
+        ["Pull", "Sweat"], ["T-shirt", "Chemise"], ["Jean", "Short"], ["Robe", "Jupe"], ["Chaussettes", "Collants"],
+        ["Baskets", "Tongs"], ["Bottes", "Pantoufles"], ["Casquette", "Bonnet"], ["Chapeau", "Béret"], ["Écharpe", "Cravate"],
+        ["Gants", "Moufles"], ["Manteau", "Doudoune"], ["Pyjama", "Survêtement"], ["Maillot de bain", "Combinaison de plongée"], ["Montre", "Bracelet"],
+        ["Collier", "Boucles d'oreilles"], ["Lunettes", "Lunettes de soleil"], ["Ceinture", "Bretelles"], ["Sac à dos", "Valise"], ["Sac à main", "Portefeuille"],
+        ["Parfum", "Déodorant"], ["Rouge à lèvres", "Vernis à ongles"], ["Couronne", "Diadème"], ["Cape", "Poncho"], ["Costume", "Smoking"],
+        ["Uniforme", "Déguisement"], ["Imperméable", "Blouson"], ["Nœud papillon", "Cravate"], ["Talons", "Ballerines"], ["Bague", "Alliance"],
+        ["Gilet", "Veste"], ["Salopette", "Combinaison"], ["Bavoir", "Tablier"], ["Chaussons", "Sabots"], ["Masque", "Cagoule"]
+      ]
+    },
+    {
+      "id": "corps", "nom": "Corps et santé", "emoji": "🦷",
+      "paires": [
+        ["Main", "Pied"], ["Bras", "Jambe"], ["Œil", "Oreille"], ["Nez", "Bouche"], ["Dent", "Langue"],
+        ["Cheveux", "Barbe"], ["Genou", "Coude"], ["Cœur", "Cerveau"], ["Os", "Muscle"], ["Ongle", "Doigt"],
+        ["Rhume", "Grippe"], ["Pansement", "Plâtre"], ["Pilule", "Sirop"], ["Seringue", "Thermomètre"], ["Béquilles", "Fauteuil roulant"],
+        ["Bâillement", "Éternuement"], ["Hoquet", "Toux"], ["Rire", "Sourire"], ["Sommeil", "Sieste"], ["Rêve", "Cauchemar"],
+        ["Larme", "Sueur"], ["Moustache", "Sourcils"], ["Bisou", "Câlin"], ["Ventre", "Dos"], ["Nombril", "Grain de beauté"],
+        ["Bosse", "Bleu"], ["Varicelle", "Rougeole"], ["Lunettes", "Lentilles"], ["Pouce", "Petit doigt"], ["Taches de rousseur", "Fossettes"]
+      ]
+    },
+    {
+      "id": "ecole", "nom": "École et bureau", "emoji": "✏️",
+      "paires": [
+        ["Stylo", "Crayon"], ["Gomme", "Taille-crayon"], ["Cahier", "Classeur"], ["Règle", "Équerre"], ["Cartable", "Trousse"],
+        ["Colle", "Scotch"], ["Tableau noir", "Tableau blanc"], ["Feutre", "Surligneur"], ["Calculatrice", "Boulier"], ["Dictionnaire", "Encyclopédie"],
+        ["Récréation", "Pause déjeuner"], ["Devoirs", "Révisions"], ["Examen", "Concours"], ["Bulletin", "Diplôme"], ["Maths", "Physique"],
+        ["Histoire", "Géographie"], ["Anglais", "Espagnol"], ["Agrafeuse", "Trombone"], ["Post-it", "Bloc-notes"], ["Imprimante", "Photocopieuse"],
+        ["Compas", "Rapporteur"], ["Réunion", "Conférence"], ["Bac", "Brevet"], ["Craie", "Éponge"], ["Directeur", "Inspecteur"],
+        ["Dictée", "Rédaction"], ["Exposé", "Oral"], ["Cours de sport", "Cours de dessin"], ["Agenda", "Calendrier"], ["Punition", "Heure de colle"]
+      ]
+    },
+    {
+      "id": "musique", "nom": "Musique et arts", "emoji": "🎸",
+      "paires": [
+        ["Guitare", "Violon"], ["Piano", "Orgue"], ["Batterie", "Tambour"], ["Trompette", "Saxophone"], ["Flûte", "Clarinette"],
+        ["Ukulélé", "Banjo"], ["Accordéon", "Harmonica"], ["Chanteur", "Rappeur"], ["Concert", "Festival"], ["Opéra", "Comédie musicale"],
+        ["Rock", "Jazz"], ["Rap", "Reggae"], ["Disco", "Techno"], ["Valse", "Tango"], ["Ballet", "Claquettes"],
+        ["Peinture", "Dessin"], ["Sculpture", "Poterie"], ["Appareil photo", "Caméra"], ["Pinceau", "Rouleau"], ["Micro", "Haut-parleur"],
+        ["Casque audio", "Écouteurs"], ["Chorale", "Orchestre"], ["Chef d'orchestre", "DJ"], ["Karaoké", "Blind test"], ["Bande dessinée", "Manga"],
+        ["Roman", "Poème"], ["Graffiti", "Fresque"], ["Origami", "Collage"], ["Harpe", "Violoncelle"], ["Xylophone", "Triangle"],
+        ["Vinyle", "Cassette"], ["Chanson", "Berceuse"], ["Pochoir", "Tampon"], ["Aquarelle", "Gouache"], ["Breakdance", "Hip-hop"]
+      ]
+    },
+    {
+      "id": "fetes", "nom": "Fêtes", "emoji": "🎉",
+      "paires": [
+        ["Noël", "Nouvel An"], ["Anniversaire", "Baptême"], ["Mariage", "Fiançailles"], ["Halloween", "Carnaval"], ["Œuf de Pâques", "Calendrier de l'Avent"],
+        ["Saint-Valentin", "Fête des mères"], ["Feu d'artifice", "Pétard"], ["Ballon de baudruche", "Guirlande"], ["Cadeau", "Surprise"], ["Gâteau d'anniversaire", "Pièce montée"],
+        ["Sapin de Noël", "Crèche"], ["Bal", "Boum"], ["Pique-nique", "Goûter"], ["Kermesse", "Brocante"], ["Colonie de vacances", "Classe verte"],
+        ["Chasse aux œufs", "Chasse au trésor"], ["Confettis", "Serpentins"], ["Défilé", "Manifestation"], ["Vacances", "Week-end"], ["Toast", "Discours"],
+        ["Chandeleur", "Mardi gras"], ["Soirée pyjama", "Soirée déguisée"], ["Piñata", "Pêche aux canards"], ["Bougie", "Lampion"], ["Faire-part", "Carte d'invitation"],
+        ["Fête de la musique", "14 Juillet"], ["Réveillon", "Brunch"], ["Lune de miel", "Voyage scolaire"], ["Chapeau pointu", "Masque de carnaval"], ["Photomaton", "Selfie"]
+      ]
+    },
+    {
+      "id": "personnages", "nom": "Personnages", "emoji": "🧙",
+      "paires": [
+        ["Sorcière", "Fée"], ["Vampire", "Loup-garou"], ["Fantôme", "Zombie"], ["Dragon", "Dinosaure"], ["Licorne", "Pégase"],
+        ["Pirate", "Viking"], ["Chevalier", "Mousquetaire"], ["Princesse", "Reine"], ["Roi", "Empereur"], ["Ogre", "Géant"],
+        ["Lutin", "Elfe"], ["Nain", "Gnome"], ["Robot", "Extraterrestre"], ["Super-héros", "Super-vilain"], ["Ninja", "Samouraï"],
+        ["Cowboy", "Shérif"], ["Momie", "Squelette"], ["Père Noël", "Lapin de Pâques"], ["Petit Chaperon rouge", "Boucle d'or"], ["Cendrillon", "Blanche-Neige"],
+        ["Peter Pan", "Pinocchio"], ["Harry Potter", "Merlin"], ["Batman", "Spider-Man"], ["Superman", "Captain America"], ["Mario", "Sonic"],
+        ["Mickey", "Bugs Bunny"], ["Astérix", "Obélix"], ["Schtroumpf", "Minion"], ["Shrek", "Hulk"], ["Dark Vador", "Voldemort"],
+        ["Sherlock Holmes", "Hercule Poirot"], ["Dracula", "Frankenstein"], ["Robin des Bois", "Zorro"], ["Ange", "Diable"], ["Génie de la lampe", "Fée marraine"],
+        ["Yéti", "Monstre du Loch Ness"], ["Tarzan", "Mowgli"], ["Sirène", "Triton"], ["Pikachu", "Rondoudou"], ["Tintin", "Spirou"],
+        ["Elsa", "Raiponce"], ["Simba", "Nemo"], ["Woody", "Buzz l'Éclair"], ["Luigi", "Wario"], ["Gargamel", "Capitaine Crochet"]
+      ]
+    },
+    {
+      "id": "ecrans", "nom": "Écrans et culture", "emoji": "🎬",
+      "paires": [
+        ["Film", "Série"], ["Dessin animé", "Film d'animation"], ["Netflix", "YouTube"], ["Comédie", "Film d'horreur"], ["Oscars", "Festival de Cannes"],
+        ["Titanic", "Avatar"], ["Star Wars", "Star Trek"], ["Jurassic Park", "King Kong"], ["Disney", "Pixar"], ["Télévision", "Radio"],
+        ["Téléréalité", "Jeu télévisé"], ["Journal télévisé", "Bulletin météo"], ["Influenceur", "Célébrité"], ["Bande-annonce", "Publicité"], ["Le Roi lion", "Le Livre de la jungle"],
+        ["Harry Potter", "Le Seigneur des anneaux"], ["Toy Story", "Cars"], ["La Reine des neiges", "Vaiana"], ["Popcorn", "Esquimau"], ["Réalisateur", "Producteur"],
+        ["Western", "Film de science-fiction"], ["Documentaire", "Reportage"], ["Générique", "Clap de fin"], ["Héros", "Méchant"], ["Sous-titres", "Doublage"]
+      ]
+    },
+    {
+      "id": "technologie", "nom": "Technologie", "emoji": "📱",
+      "paires": [
+        ["Téléphone", "Tablette"], ["Ordinateur", "Machine à écrire"], ["Clavier", "Souris"], ["Wi-Fi", "Bluetooth"], ["SMS", "E-mail"],
+        ["Instagram", "TikTok"], ["WhatsApp", "Snapchat"], ["Google", "Wikipédia"], ["Chargeur", "Batterie"], ["Clé USB", "Disque dur"],
+        ["Drone", "Avion télécommandé"], ["Application", "Site web"], ["Mot de passe", "Code PIN"], ["Virus", "Bug"], ["Écran", "Projecteur"],
+        ["GPS", "Boussole"], ["Télécommande", "Manette"], ["PlayStation", "Xbox"], ["Réalité virtuelle", "Hologramme"], ["Émoji", "Sticker"],
+        ["Podcast", "Émission de radio"], ["Satellite", "Antenne"], ["Talkie-walkie", "Téléphone fixe"], ["Robot aspirateur", "Robot tondeuse"], ["Selfie", "Capture d'écran"],
+        ["Intelligence artificielle", "Assistant vocal"], ["Imprimante 3D", "Scanner"], ["Montre connectée", "Bracelet fitness"], ["Lampe de poche", "Laser"], ["Code-barres", "QR code"]
+      ]
+    },
+    {
+      "id": "jeux", "nom": "Jeux et jouets", "emoji": "🧸",
+      "paires": [
+        ["Échecs", "Dames"], ["Puzzle", "Lego"], ["Poupée", "Peluche"], ["Toupie", "Yo-yo"], ["Cerf-volant", "Avion en papier"],
+        ["Billes", "Dés"], ["Jeu de cartes", "Jeu de société"], ["Monopoly", "Cluedo"], ["Cache-cache", "Chat perché"], ["Marelle", "Corde à sauter"],
+        ["Toboggan", "Balançoire"], ["Château de sable", "Bonhomme de neige"], ["Pâte à modeler", "Slime"], ["Pistolet à eau", "Bombe à eau"], ["Playmobil", "Petites voitures"],
+        ["Rubik's Cube", "Casse-tête"], ["Tetris", "Pac-Man"], ["Minecraft", "Fortnite"], ["Cartes Pokémon", "Images Panini"], ["Loto", "Bingo"],
+        ["Domino", "Mikado"], ["Bataille navale", "Puissance 4"], ["Jenga", "Kapla"], ["Manège", "Grande roue"], ["Montagnes russes", "Train fantôme"],
+        ["Auto-tamponneuse", "Kart"], ["Ballon sauteur", "Pogo stick"], ["Bulles de savon", "Ballon gonflable"], ["Uno", "Bataille"], ["Mario Kart", "Rocket League"],
+        ["Pictionary", "Mime"], ["Twister", "Chaises musicales"], ["Train électrique", "Circuit de voitures"], ["Dînette", "Marchande"], ["Déguisement de pirate", "Déguisement de chevalier"]
+      ]
+    },
+    {
+      "id": "objets", "nom": "Bricolage et objets", "emoji": "🔨",
+      "paires": [
+        ["Marteau", "Tournevis"], ["Scie", "Hache"], ["Clou", "Vis"], ["Pelle", "Râteau"], ["Arrosoir", "Tuyau d'arrosage"],
+        ["Échelle", "Escabeau"], ["Brouette", "Chariot"], ["Aiguille", "Épingle"], ["Bouton", "Fermeture éclair"], ["Bobine de fil", "Pelote de laine"],
+        ["Corde", "Chaîne"], ["Allumette", "Briquet"], ["Sablier", "Chronomètre"], ["Lettre", "Carte postale"], ["Timbre", "Enveloppe"],
+        ["Journal", "Magazine"], ["Livre", "Album photo"], ["Carte", "Globe"], ["Drapeau", "Blason"], ["Bouteille à la mer", "Pigeon voyageur"],
+        ["Pièce", "Billet"], ["Trésor", "Coffre-fort"], ["Médaille", "Coupe"], ["Ticket de caisse", "Facture"], ["Loupe", "Jumelles"],
+        ["Télescope", "Microscope"], ["Aimant", "Boussole"], ["Tondeuse", "Débroussailleuse"], ["Perceuse", "Ponceuse"], ["Pinceau", "Bombe de peinture"],
+        ["Ficelle", "Élastique"], ["Ballon d'hélium", "Bulle"], ["Canne", "Parapluie"], ["Ventouse", "Pince"], ["Cadre photo", "Tableau"]
+      ]
+    },
+    {
+      "id": "monde", "nom": "Autour du monde", "emoji": "🌍",
+      "paires": [
+        ["France", "Belgique"], ["Paris", "Londres"], ["Italie", "Espagne"], ["Japon", "Chine"], ["Brésil", "Argentine"],
+        ["États-Unis", "Canada"], ["Égypte", "Maroc"], ["Australie", "Nouvelle-Zélande"], ["Allemagne", "Autriche"], ["Suisse", "Monaco"],
+        ["Inde", "Thaïlande"], ["Mexique", "Pérou"], ["Grèce", "Croatie"], ["Afrique", "Asie"], ["Europe", "Amérique"],
+        ["New York", "Las Vegas"], ["Rome", "Athènes"], ["Venise", "Amsterdam"], ["Marseille", "Nice"], ["Lyon", "Bordeaux"],
+        ["Tour Eiffel", "Big Ben"], ["Statue de la Liberté", "Christ rédempteur"], ["Pyramides", "Colisée"], ["Muraille de Chine", "Mur de Berlin"], ["Mont Blanc", "Everest"],
+        ["Seine", "Tamise"], ["Amazonie", "Sahara"], ["Pôle Nord", "Antarctique"], ["Corse", "Bretagne"], ["Hawaï", "Tahiti"],
+        ["Disneyland", "Parc Astérix"], ["Arc de triomphe", "Notre-Dame"], ["Portugal", "Irlande"], ["Islande", "Norvège"], ["Hollywood", "Bollywood"]
+      ]
+    },
+    {
+      "id": "vie", "nom": "La vie", "emoji": "💛",
+      "paires": [
+        ["Amour", "Amitié"], ["Mensonge", "Secret"], ["Joie", "Fierté"], ["Peur", "Stress"], ["Jalousie", "Envie"],
+        ["Argent", "Or"], ["Matin", "Soir"], ["Lundi", "Vendredi"], ["Passé", "Futur"], ["Paradis", "Enfer"],
+        ["Magie", "Miracle"], ["Chance", "Hasard"], ["Voisin", "Colocataire"], ["Frère", "Cousin"], ["Parrain", "Tonton"],
+        ["Grand-mère", "Nounou"], ["Ami", "Camarade"], ["Rumeur", "Commérage"], ["Bébé", "Enfant"], ["Mariage", "Divorce"],
+        ["Promesse", "Pari"], ["Blague", "Devinette"], ["Excuse", "Pardon"], ["Ennui", "Fatigue"], ["Gourmandise", "Paresse"],
+        ["Courage", "Patience"], ["Victoire", "Défaite"], ["Premier rendez-vous", "Coup de foudre"], ["Anniversaire de mariage", "Saint-Valentin"], ["Déménagement", "Voyage"],
+        ["Animal de compagnie", "Doudou"], ["Argent de poche", "Tirelire"], ["Bisou magique", "Pansement"], ["Petit-déjeuner", "Goûter"], ["Grasse matinée", "Sieste"]
+      ]
+    }
+  ]
+}
